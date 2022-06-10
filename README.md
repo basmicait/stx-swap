@@ -1,32 +1,32 @@
-# 🥞 Pancake Frontend
+# Pancake Frontend, edited to suit STX demands 
 
-This project contains the main features of the pancake application.
-
-If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
-
-## Documentation
-
-- [Info](doc/Info.md)
-- [Cypress tests](doc/Cypress.md)
 
 
 ## Quick Start
 
-install dependencies using **yarn**
+Install NPM packages:
 
 ```sh
-yarn
+npm i
 ```
 
-start the development server
+
+Install Yarn dependancies:
+
 ```sh
-yarn dev
+yarn install
 ```
 
-build with production mode
+Build the next app:
+
 ```sh
 yarn build
+```
 
-# start the application after build
+# Run the newly built next.js app:
+
+```sh
 yarn start
 ```
+
+App will run at TCP port 3000
