@@ -16,7 +16,7 @@ RUN apt install git -y
 #    npm install -g npm && \
 #    npm update && \
 #    npm install
-RUN npm install
+#RUN npm install
 RUN yarn install
 RUN yarn build
 #RUN rm /root/.ssh/config &&\
