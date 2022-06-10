@@ -2,7 +2,7 @@ FROM node:14-bullseye
 RUN mkdir -p /code
 WORKDIR /code
 ADD . /code
-COPY git.key /root/.ssh/git.key
+#COPY git.key /root/.ssh/git.key
 RUN apt install git -y
 #RUN mkdir -p /root/.ssh &&\
 #    touch /root/.ssh/config &&\
@@ -19,8 +19,8 @@ RUN apt install git -y
 RUN npm install
 RUN yarn install
 RUN yarn build
-RUN rm /root/.ssh/config &&\
-    rm /root/.ssh/git.key
+#RUN rm /root/.ssh/config &&\
+#    rm /root/.ssh/git.key
 CMD [ "yarn", "start" ]
 #CMD ["/bin/bash"]
 EXPOSE 3000
