@@ -17,14 +17,9 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - id: docker-publish
-      name: Build image
-      uses: bitovi/github-actions-docker-publish@v1.0.2
+      uses: bitovi/github-actions-docker-publish@1
       with:
         docker_username: ${{ secrets.DOCKERHUB_USERNAME }}
         docker_password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        checkout: 'false'
-        image_tag: runner-generated
-        org_name: basleijenhorst
-        repo_name: public
 
      
