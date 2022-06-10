@@ -1,4 +1,4 @@
-# Pancake Frontend, edited to suit STX demands 
+# Pancake Swap Frontend, edited to suit STX demands 
 
 
 
@@ -29,4 +29,5 @@ yarn build
 yarn start
 ```
 
-App will run at TCP port 3000
+App will run at TCP port 3000. Only /swap route will be used.
+Access: http://localhost:3000/swap
