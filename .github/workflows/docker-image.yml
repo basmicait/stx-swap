@@ -14,12 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Waar ben ik? 
-      run: pwd
-    - name: List 
-      run: ls -alh
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - id: docker-publish
       uses: bitovi/github-actions-docker-publish@v1
       with:
