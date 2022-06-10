@@ -17,7 +17,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - id: docker-publish
-      uses: bitovi/github-actions-docker-publish@1
+      uses: bitovi/github-actions-docker-publish@v1
       with:
         docker_username: ${{ secrets.DOCKERHUB_USERNAME }}
         docker_password: ${{ secrets.DOCKERHUB_PASSWORD }}
