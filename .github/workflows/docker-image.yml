@@ -18,5 +18,9 @@ jobs:
       with:
         docker_username: ${{ secrets.DOCKERHUB_USERNAME }}
         docker_password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        checkout: 'false'
+        #sha: 'true'
+        org_name: basleijenhorst
+        repo_name: stx-swap
 
      
