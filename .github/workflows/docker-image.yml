@@ -14,11 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - id: docker-publish
-      uses: bitovi/github-actions-docker-publish@v1
+      uses: bitovi/github-actions-docker-publish@v1 # docs: https://github.com/bitovi/github-actions-docker-publish
       with:
         docker_username: ${{ secrets.DOCKERHUB_USERNAME }}
         docker_password: ${{ secrets.DOCKERHUB_PASSWORD }}
         checkout: 'false'
+        image_tag: latest
         #sha: 'true'
         org_name: basleijenhorst
         repo_name: stx-swap
