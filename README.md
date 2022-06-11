@@ -4,13 +4,6 @@
 
 ## Quick Start
 
-Install NPM packages:
-
-```sh
-npm i
-```
-
-
 Install Yarn dependancies:
 
 ```sh
