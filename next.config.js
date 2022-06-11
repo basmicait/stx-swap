@@ -133,4 +133,8 @@ const config = {
   },
 }
 
-module.exports = withBundleAnalyzer(withSentryConfig(withTM(config), sentryWebpackPluginOptions))
+module.exports = {
+  experimental: {
+    outputStandalone: true,
+  },
+}
